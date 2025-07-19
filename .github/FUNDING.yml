@@ -1,10 +1,6 @@
 github: vanitoo            # логин GitHub Sponsors
-patreon: mypatreon         # имя пользователя на Patreon
-open_collective: myorg     # slug организации/проекта на OpenCollective
-ko_fi: mykofi              # имя пользователя на Ko-fi
-tidelift: pypi/my-package  # идентификатор пакета в Tidelift
-custom: ["https://buymeacoffee.com/username", "https://example.com/donate"]
-custom: ["https://boosty.to/vanitoo", "https://example.com/donate"]
+patreon: vanuwka           # имя пользователя на Patreon
+custom: ["https://boosty.to/vanuwka"]
 
 
 # These are supported funding model platforms

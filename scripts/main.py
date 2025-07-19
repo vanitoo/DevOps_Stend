@@ -148,7 +148,7 @@ def convert_vbulletin_to_markdown(url):
     print(f"📄 Тема сохранена в файл: {output_file}")
     print(f"📊 Всего сообщений: {len(posts)}")
     print(f"🖼️ Сохранено изображений: {image_counter}")
-    print(f"📁 Папка с изображениями: {os.path.abspath('images')}")
+    print(f"📁 Папка с изображениями: {os.path.abspath('../images')}")
 
 
 if __name__ == "__main__":

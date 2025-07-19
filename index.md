@@ -40,3 +40,16 @@ title: DevOps Stend
 - [29. Настроим OKD Web console (Keycloak+K8S)](29_Настроим_OKD_Web_console_(Keycloak+K8S).html)
 - [30. Настроим логирование Django в Console _ File _ OpenSearch](30_Настроим_логирование_Django_в_Console___File___OpenSearch.html)
 - [31. Подключим Django к кластеру PostgreSQL (Patroni)](31_Подключим_Django_к_кластеру_PostgreSQL_(Patroni).html)
+
+**Вспомогательные инструкции:**
+
+- [50. Покупаем Wildcard сертификат](50_Покупаем_Wildcard_сертификат.html)
+- [51. Установка Ubuntu 20.04 LTS](51_Установка_Ubuntu_20.04_LTS.html)
+- [52. Настроим свой DNS сервер (Bind)](52_Настроим_свой_DNS_сервер_(Bind).html)
+- [53. Установка Docker & Docker-Compose](53_Установка_Docker_&_Docker-Compose.html)
+- [54. Настройка IDE PyCharm + Django Web Server (landing-page)](54_Настройка_IDE_PyCharm_+_Django_Web_Server_(landing-page).html)
+- [55. Настроим CICD Jenkins](55_Настроим_CICD_Jenkins.html)
+- [56. Клонирование проекта в свой GitLab](56_Клонирование_проекта_в_свой_GitLab.html)
+- [57. Настроим GitLab Operator](57_Настроим_GitLab_Operator.html)
+- [58. Настроим GitLab Runner в Kubernetes](58_Настроим_GitLab_Runner_в_Kubernetes.html)
+- [59. Настроим GitLab Runner](59_Настроим_GitLab_Runner.html)

@@ -1,3 +1,8 @@
+---
+layout: default
+title: 57_Настроим_GitLab_Operator
+---
+
 
 ##  Настроим GitLab Operator 
 

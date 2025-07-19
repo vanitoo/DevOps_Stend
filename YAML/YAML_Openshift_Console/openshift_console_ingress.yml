@@ -1,0 +1,48 @@
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: console
+  namespace: openshift-console
+spec:
+  ports:
+    - name: https
+      protocol: TCP
+      port: 443
+      targetPort: 8443
+    - name: http
+      protocol: TCP
+      port: 80
+      targetPort: 8080
+  internalTrafficPolicy: Cluster
+  type: LoadBalancer
+  selector:
+    app: console
+    component: ui
+---
+kind: Ingress
+apiVersion: networking.k8s.io/v1
+metadata:
+  name: okd-console
+  namespace: openshift-console
+  annotations:
+    kubernetes.io/ingress.class: "nginx"
+    kubernetes.io/tls-acme: 'true'
+    nginx.ingress.kubernetes.io/affinity: cookie
+    nginx.ingress.kubernetes.io/force-ssl-redirect: 'true'
+    nginx.ingress.kubernetes.io/ssl-passthrough: 'false'
+spec:
+  ingressClassName: nginx
+  tls:
+    - secretName: console-serving-cert
+  rules:
+    - host: console.kubeadm.ru
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: console
+                port:
+                  number: 80

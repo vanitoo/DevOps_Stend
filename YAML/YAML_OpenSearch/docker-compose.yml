@@ -1,0 +1,60 @@
+version: '3'
+services:
+#***************************************************************
+  opensearch-node:
+    image: harbor.kubeadm.ru/mirror.docker.hub/opensearchproject/opensearch:2.10.0
+    container_name: opensearch-node
+    restart: always
+    environment:
+      - discovery.type=single-node
+      - bootstrap.memory_lock=true # along with the memlock settings below, disables swapping
+      - "OPENSEARCH_JAVA_OPTS=-Xms4096m -Xmx4096m" # minimum and maximum Java heap size, recommend setting both to 50% of system RAM
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+      nofile:
+        soft: 65536 # maximum number of open files for the OpenSearch user, set to at least 65536 on modern systems
+        hard: 65536
+    volumes:
+      - "opensearch-data:/usr/share/opensearch"
+    ports:
+      - 9200:9200
+      - 9600:9600 # required for Performance Analyzer
+    networks:
+      - opensearch-net
+#***************************************************************
+  logstash:
+    image: harbor.kubeadm.ru/mirror.docker.hub/opensearchproject/logstash-oss-with-opensearch-output-plugin:8.9.0
+    container_name: logstash
+    volumes:
+      - "logstash-data:/opt/logstash"
+    ports:
+      - "5044:5044"
+    environment:
+      LS_JAVA_OPTS: "-Xmx4096m -Xms4096m" # minimum and maximum Java heap size, recommend setting both to 50% of system RAM
+    networks:
+      - opensearch-net
+#***************************************************************
+  opensearch-dashboards:
+    image: harbor.kubeadm.ru/mirror.docker.hub/opensearchproject/opensearch-dashboards:2.10.0
+    container_name: opensearch-dashboards
+    restart: always
+    ports:
+      - 5601:5601
+    depends_on:
+      - opensearch-node
+    expose:
+      - "5601"
+    environment:
+      OPENSEARCH_HOSTS: '["https://opensearch-node:9200"]'
+    networks:
+      - opensearch-net
+#***************************************************************
+volumes:
+  opensearch-data:
+  logstash-data:
+
+networks:
+  opensearch-net:
+    driver: bridge

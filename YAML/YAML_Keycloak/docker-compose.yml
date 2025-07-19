@@ -1,0 +1,61 @@
+version: "3.9"
+services:
+#*****************************************************************************
+  keycloak-postgres:
+    image: harbor.kubeadm.ru/mirror.docker.hub/library/postgres:14.0
+    container_name: keycloak-postgres
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: postgres
+    healthcheck:
+      test: pg_isready -d postgres
+      interval: 10s
+      timeout: 5s
+      retries: 3
+      start_period: 5s
+    ports:
+      - "5432:5432"
+    deploy:
+      resources:
+        limits:
+          memory: 256M
+    networks:
+      - keycloak
+#*****************************************************************************
+  keycloak:
+    image: harbor.kubeadm.ru/mirror.docker.hub/keycloak/keycloak:20.0.2
+    container_name: keycloak
+    volumes:
+      - "/media/data/keycloak/keycloak.kubeadm.ru.crt:/opt/keycloak/conf/keycloak.kubeadm.ru.crt:ro"
+      - "/media/data/keycloak/keycloak.kubeadm.ru.key:/opt/keycloak/conf/keycloak.kubeadm.ru.key:ro"
+    command:
+      - start --auto-build --db postgres --hostname-strict-https false --hostname-strict false --proxy edge --http-enabled true --import-realm --spi-user-profile-legacy-user-profile-read-only-attributes *_RES_ACCESS_MODE
+    environment:
+      KC_DB_URL: jdbc:postgresql://keycloak-postgres:5432/postgres
+      KC_DB_USERNAME: postgres
+      KC_DB_PASSWORD: postgres
+      KC_DB_SCHEMA: public
+      KC_FEATURES: preview
+      KEYCLOAK_ADMIN: admin
+      KEYCLOAK_ADMIN_PASSWORD: admin
+      KC_HTTPS_CERTIFICATE_FILE: /opt/keycloak/conf/keycloak.kubeadm.ru.crt
+      KC_HTTPS_CERTIFICATE_KEY_FILE: /opt/keycloak/conf/keycloak.kubeadm.ru.key
+    ports:
+      - 443:8443
+    depends_on:
+      keycloak-postgres:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "curl", "-f", "https://0.0.0.0:443/realms/master"]
+      start_period: 10s
+      interval: 30s
+      retries: 3
+      timeout: 5s
+    networks:
+      - keycloak
+#*****************************************************************************  
+networks:
+  keycloak:
+    driver: bridge

@@ -1,0 +1,20 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: dex
+  namespace: auth-system
+  annotations:
+    kubernetes.io/tls-acme: "true"
+    ingress.kubernetes.io/force-ssl-redirect: "true"
+spec:
+  tls:
+  - secretName: dex
+    hosts:
+    - auth.kubernetesuat.mydomain.com
+  rules:
+  - host: auth.kubernetes.mydomain.com
+    http:
+      paths:
+      - backend:
+          serviceName: dex
+          servicePort: 5556

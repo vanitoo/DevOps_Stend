@@ -1,0 +1,112 @@
+---
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: console
+  namespace: openshift-console
+  labels:
+    app: console
+    component: ui
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: console
+      component: ui
+  template:
+    metadata:
+      name: console
+      creationTimestamp: null
+      labels:
+        app: console
+        component: ui
+    spec:
+      restartPolicy: Always
+      serviceAccountName: console
+      schedulerName: default-scheduler
+      affinity:
+        podAntiAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            - labelSelector:
+                matchExpressions:
+                  - key: component
+                    operator: In
+                    values:
+                      - ui
+              topologyKey: kubernetes.io/hostname
+      terminationGracePeriodSeconds: 30
+      securityContext: {}
+      containers:
+        - name: console
+          image: harbor.kubeadm.ru/library/origin-console:4.12.0
+          command:
+            - /opt/bridge/bin/bridge
+            - '--public-dir=/opt/bridge/static'
+            - '--control-plane-topology-mode=HighlyAvailable'
+            - '--k8s-public-endpoint=https://k8s.kubeadm.ru:6443'
+            - '--listen=http://[::]:8080'
+            - '--k8s-auth=oidc'
+            - '--k8s-mode=in-cluster'
+            - '--k8s-mode=off-cluster'
+            - '--k8s-mode-off-cluster-thanos=http://20.20.20.61:9090'
+            - '--k8s-mode-off-cluster-alertmanager=http://20.20.20.61:9093'
+            - '--k8s-mode-off-cluster-endpoint=https://k8s.kubeadm.ru:6443'
+            - '--k8s-mode-off-cluster-skip-verify-tls=true'
+            - '--tls-cert-file=/var/serving-cert/tls.crt'
+            - '--tls-key-file=/var/serving-cert/tls.key'
+            - '--base-address=https://console.kubeadm.ru'
+            - '--user-auth=oidc'
+            - '--user-auth-oidc-ca-file=/var/serving-cert/ca.crt'
+            - '--user-auth-oidc-client-id=kubernetes'
+            - '--user-auth-oidc-client-secret=cZTZquEKFBSr546u0mMxrBTMvbIBEPdQ'
+            - '--user-auth-logout-redirect=https://console.kubeadm.ru'
+            - >-
+              -user-auth-oidc-issuer-url=https://keycloak.kubeadm.ru/realms/kubernetes
+          resources: {}
+          volumeMounts:
+            - name: console-serving-cert
+              readOnly: true
+              mountPath: /var/serving-cert
+          terminationMessagePath: /dev/termination-log
+          terminationMessagePolicy: File
+          readinessProbe:
+            httpGet:
+              path: /health
+              port: 8080
+              scheme: HTTP
+            timeoutSeconds: 1
+            periodSeconds: 10
+            successThreshold: 1
+            failureThreshold: 3
+          livenessProbe:
+            httpGet:
+              path: /health
+              port: 8080
+              scheme: HTTP
+            initialDelaySeconds: 150
+            timeoutSeconds: 1
+            periodSeconds: 10
+            successThreshold: 1
+            failureThreshold: 3
+          ports:
+            - name: https
+              containerPort: 8443
+              protocol: TCP
+            - name: http
+              containerPort: 8080
+              protocol: TCP
+          imagePullPolicy: IfNotPresent
+      serviceAccount: console
+      volumes:
+        - name: console-serving-cert
+          secret:
+            secretName: console-serving-cert
+            defaultMode: 420
+      dnsPolicy: ClusterFirst
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxUnavailable: 1
+      maxSurge: 3
+  revisionHistoryLimit: 10
+  progressDeadlineSeconds: 600

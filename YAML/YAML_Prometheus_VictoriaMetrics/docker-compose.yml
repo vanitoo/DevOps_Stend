@@ -1,0 +1,168 @@
+version: '3'
+services:
+#*****************************************************************************
+  prometheus:
+    image: harbor.kubeadm.ru/mirror.docker.hub/prom/prometheus:latest
+    volumes:
+      - "/media/data/prometheus.yml:/etc/prometheus/prometheus.yml:ro"
+      - "/media/data/alert_rules.yml:/etc/prometheus/alert_rules.yml:ro"
+      - "prometheus_data:/prometheus"
+    container_name: prometheus
+    hostname: prometheus
+    command:
+      - --config.file=/etc/prometheus/prometheus.yml
+    ports:
+      - 9090:9090
+    restart: unless-stopped
+    environment:
+      TZ: "Europe/Moscow"
+    networks:
+      - prometheus-net
+#*****************************************************************************
+  node-exporter:
+    image: harbor.kubeadm.ru/mirror.docker.hub/prom/node-exporter
+    volumes:
+      - /proc:/host/proc:ro
+      - /sys:/host/sys:ro
+      - /:/rootfs:ro
+    container_name: exporter
+    hostname: exporter
+    command:
+      - --path.procfs=/host/proc
+      - --path.sysfs=/host/sys
+      - --collector.filesystem.ignored-mount-points
+      - ^/(sys|proc|dev|host|etc|rootfs/var/lib/docker/containers|rootfs/var/lib/docker/overlay2|rootfs/run/docker/netns|rootfs/var/lib/docker/aufs)($$|/)
+    ports:
+      - 9100:9100
+    restart: unless-stopped
+    environment:
+      TZ: "Europe/Moscow"
+    networks:
+      - prometheus-net
+#*****************************************************************************
+  grafana:
+    image: harbor.kubeadm.ru/mirror.docker.hub/grafana/grafana
+    user: root
+    depends_on:
+      - prometheus
+    ports:
+      - 3000:3000
+    volumes:
+      - "grafana-data:/var/lib/grafana"
+    container_name: grafana
+    hostname: grafana
+    restart: unless-stopped
+    environment:
+      TZ: "Europe/Moscow"
+    networks:
+      - prometheus-net
+#*****************************************************************************
+  victoriametrics:
+    container_name: victoriametrics
+    image: harbor.kubeadm.ru/mirror.docker.hub/victoriametrics/victoria-metrics:latest
+    depends_on:
+      - prometheus
+    ports:
+      - 8428:8428
+    volumes:
+      - "vm-data:/storage"
+    command:
+      - "--storageDataPath=/storage"
+      - "--httpListenAddr=:8428"
+#      - "--vmalert.proxyURL=http://vmalert:8880"
+    networks:
+      - prometheus-net
+#*****************************************************************************
+  vmagent:
+    container_name: vmagent
+    image: harbor.kubeadm.ru/mirror.docker.hub/victoriametrics/vmagent:latest
+    depends_on:
+      - "victoriametrics"
+    ports:
+      - 8429:8429
+    volumes:
+      - vmagent-data:/vmagentdata
+      - "/media/data/prometheus.yml:/etc/prometheus/prometheus.yml:ro"
+    command:
+      - "--promscrape.config=/etc/prometheus/prometheus.yml"
+      - "--remoteWrite.url=http://victoriametrics:8428/api/v1/write"
+      - "--promscrape.config.strictParse=false"
+    networks:
+      - prometheus-net
+#*****************************************************************************
+  alertmanager:
+    image: harbor.kubeadm.ru/mirror.docker.hub/prom/alertmanager:latest
+    user: root
+    depends_on:
+      - prometheus
+    ports:
+      - 9093:9093
+    volumes:
+      - "/media/data/config.yml:/etc/alertmanager/config.yml:ro"
+      - alertmanager-data:/etc/alertmanager/
+    container_name: alertmanager
+    hostname: alertmanager
+    environment:
+      TZ: "Europe/Moscow"
+    restart: unless-stopped
+    command:
+      - '--config.file=/etc/alertmanager/config.yml'
+      - '--storage.path=/etc/alertmanager/data'
+    networks:
+      - prometheus-net
+#*****************************************************************************
+  alertmanager-bot:
+    command:
+      - --alertmanager.url=http://alertmanager:9093
+      - --log.level=info
+      - --store=bolt
+      - --bolt.path=/data/bot.db
+      - --telegram.admin=573454381
+      - --telegram.token=5472129845:AAFTQRdujqIHgWHbbVtfYWQQvzvIN98KBqg
+    image: harbor.kubeadm.ru/mirror.docker.hub/metalmatze/alertmanager-bot:latest
+    user: root
+    depends_on:
+      - prometheus
+    ports:
+      - 8080:8080
+    container_name: alertmanager-bot
+    hostname: alertmanager-bot
+    environment:
+      TZ: "Europe/Moscow"
+    restart: unless-stopped
+    volumes:
+      - bot-data:/data
+    networks:
+      - prometheus-net
+#*****************************************************************************
+  blackbox:
+    image: harbor.kubeadm.ru/mirror.docker.hub/prom/blackbox-exporter
+    container_name: blackbox
+    hostname: blackbox
+    depends_on:
+      - prometheus
+    volumes:
+      - "/media/data/blackbox.yml:/etc/blackbox/blackbox.yml:ro"
+      - blackbox-data:/etc/blackbox
+    ports:
+      - 9115:9115
+    restart: unless-stopped
+    command:
+      - "--config.file=/etc/blackbox/blackbox.yml"
+    environment:
+      TZ: "Europe/Moscow"
+    networks:
+      - prometheus-net
+#*****************************************************************************
+volumes:
+  prometheus_data:
+  grafana-data:
+  vm-data:
+  vmagent-data:
+  alertmanager-data:
+  bot-data:
+  blackbox-data:
+#*****************************************************************************
+networks:
+  prometheus-net:
+    driver: bridge

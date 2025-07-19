@@ -1,3 +1,8 @@
+---
+layout: default
+title: 54_Настройка_IDE_PyCharm_+_Django_Web_Server_(landing-page)
+---
+
 
 ##  Настройка IDE PyCharm + Django Web Server (landing-page) 
 

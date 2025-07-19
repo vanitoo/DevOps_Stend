@@ -1,3 +1,8 @@
+---
+layout: default
+title: 53_Установка_Docker_&_Docker-Compose
+---
+
 
 ##  Установка Docker & Docker-Compose 
 

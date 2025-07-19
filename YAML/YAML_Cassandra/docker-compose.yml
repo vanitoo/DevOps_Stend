@@ -1,0 +1,13 @@
+version: '3.7'
+
+services:
+  cassandra:
+    image: cassandra:4.0
+    container_name: cassandra-node
+    restart: always
+    ports:
+      - 9042:9042
+    volumes:
+      - ./cassandra-data:/var/lib/cassandra
+    environment:
+      - CASSANDRA_CLUSTER_NAME=my_cluster

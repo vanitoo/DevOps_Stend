@@ -1,3 +1,8 @@
+---
+layout: default
+title: 58_Настроим_GitLab_Runner_в_Kubernetes
+---
+
 
 ##  Настроим GitLab Runner в Kubernetes 
 

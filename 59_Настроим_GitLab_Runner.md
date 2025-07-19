@@ -1,3 +1,8 @@
+---
+layout: default
+title: 59_Настроим_GitLab_Runner
+---
+
 
 ##  Настроим GitLab Runner 
 

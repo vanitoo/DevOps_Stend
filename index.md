@@ -1,8 +1,35 @@
-# Мои инструкции
+# DevOps Stend
 
-Добро пожаловать! Вот список:
+Добро пожаловать! Вот список всех инструкций:
 
-- [Начало](1_начало.md)
-- [Установка](2_установка.md)
-- [Пример](3_пример.md)
-...
+- [1. Блок схема](1_блок%20схема.md)
+- [2. Установка proxmox](2_установка%20proxmox.md)
+- [3. Настройка шлюза (Ubuntu 20.04)](3_Настройка%20шлюза%20(Ubuntu%2020.04).md)
+- [4. Настройка OpenVPN Server](4_Настройка%20OpenVPN%20Server.md)
+- [5. Настройка шаблона k8s-UbuntuTemplate](5_Настройка%20шаблона%20k8s-UbuntuTemplate.md)
+- [6. Настроим свой DNS сервер (Bind)](6_Настроим%20свой%20DNS%20сервер%20(Bind).md)
+- [7. Настройка DHCP Server](7_Настройка%20DHCP%20Server.md)
+- [8. Покупаем Wildcard сертификат](8_Покупаем%20Wildcard%20сертификат.md)
+- [9. Настройка Harbor (Ubuntu 20.04)](9_Настройка%20Harbor%20(Ubuntu%2020.04).md)
+- [10. Настроим зеркало Docker Hub](10_Настроим%20зеркало%20Docker%20Hub.md)
+- [11. Настройка Gitlab (v14.4.0)](11_Настройка%20Gitlab%20(v14.4.0).md)
+- [12. Настройка GitLab Runner (v14.4.0)](12_Настройка%20GitLab%20Runner%20(v14.4.0).md)
+- [13. Настроим K8s (CRI-O, MetalLB, Ingress)](13_Настроим%20K8s%20(CRI-O,%20MetalLB,%20Ingress).md)
+- [14. Настройка S3 API Ceph 15 Octopus (Ubuntu 20.04)](14_Настройка%20S3%20API%20Ceph%2015%20Octopus%20(Ubuntu%2020.04).md)
+- [15. Подключим Ceph в Kubernetes с помощью CSI](15_Подключим%20Ceph%20в%20Kubernetes%20с%20помощью%20CSI.md)
+- [16. Failover Cluster PostgreSQL+ Patroni + ETCD](16_Failover%20Cluster%20PostgreSQL+%20Patroni%20+%20ETCD.md)
+- [17. Настройка кластера Kafka](17_Настройка%20кластера%20Kafka.md)
+- [18. Настройка системы логирования OpenSearch](18_Настройка%20системы%20логирования%20OpenSearch.md)
+- [19. Настроим мониторинг (Prometheus + Grafana + Victoria Metrics)](19_Настроим%20мониторинг%20(Prometheus%20+%20Grafana%20+%20Victoria%20Metrics).md)
+- [20. Настройка Node Exporter](20_Настройка%20Node%20Exporter.md)
+- [21. Собираем свой Docker контейнер Flask Web Server](21_Собираем%20свой%20Docker%20контейнер%20Flask%20Web%20Server.md)
+- [22. Настроим CI_CD (GitLab)](22_Настроим%20CI_CD%20(GitLab).md)
+- [23. Развёртывание Django Web Server в Интернет](23_Развёртывание%20Django%20Web%20Server%20в%20Интенет.md)
+- [24. Резервное копирование PostgreSQL (WalG)](24_Резервное%20копирование%20РоstgrеSQL%20(WalG).md)
+- [25. Резервное копирование K8s (Velero)](25_Резервное%20копирование%20K8s%20(Velero).md)
+- [26. Настроим LDAP аутентификацию (FreeIPA)](26_Настроим%20LDAP%20аутентификацию%20(FreeIPA).md)
+- [27. Настроим OIDC (Keycloak+FreeIPA)](27_Настроим%20OIDC%20(Keycloak+FreeIPA).md)
+- [28. Настроим OIDC (Keycloak+GitLab)](28_Настроим%20OIDC%20(Keycloak+GitLab).md)
+- [29. Настроим OKD Web console (Keycloak+K8S)](29_Настроим%20OKD%20Web%20console%20(Keycloak+K8S).md)
+- [30. Настроим логирование Django в Console _ File _ OpenSearch](30_Настроим%20логирование%20Django%20в%20Console%20_%20File%20_%20OpenSearch.md)
+- [31. Подключим Django к кластеру PostgreSQL (Patroni)](31_Подключим%20Django%20к%20кластеру%20PostgreSQL%20(Patroni).md)

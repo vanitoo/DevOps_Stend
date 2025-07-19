@@ -1,3 +1,4 @@
 theme: jekyll-theme-minimal
 title: DevOps Stend
-description: Мои инструкции
+description: Подборка инструкций
+markdown: kramdown

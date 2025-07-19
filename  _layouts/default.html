@@ -5,14 +5,14 @@
   <title>{{ page.title }}</title>
   <link rel="stylesheet" href="/assets/css/style.css">
 </head>
-
-<body style="background:red">
-  <header>
+<body>
+  <header class="site-header">
     <div class="container">
       <h1>{{ site.title }}</h1>
       <nav>
         <a href="/index.html">🏠 Главная</a>
         <a href="/roadmap.html">📋 Все инструкции</a>
+        <a href="/index.html">⬅ Назад к списку</a>
       </nav>
     </div>
   </header>
@@ -25,11 +25,10 @@
     <div class="right"></div>
   </div>
 
-  <footer>
+  <footer class="site-footer">
     <div class="container">
       <p>© {{ site.title }} — {{ site.description }}</p>
     </div>
   </footer>
 </body>
-
 </html>

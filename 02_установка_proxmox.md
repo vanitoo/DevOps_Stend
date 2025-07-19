@@ -3,6 +3,7 @@ layout: default
 title: 02_установка proxmox
 ---
 
+<a class="back-link" href="/index.html">⬅ Назад к списку</a>
 
 ##  Установка Proxmox 
 

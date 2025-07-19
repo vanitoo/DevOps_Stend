@@ -2,6 +2,7 @@
 layout: default
 title: DevOps stand
 ---
+<a class="back-link" href="index.html">⬅ Назад к списку</a>
 
 # DevOps stand
 

@@ -2,6 +2,7 @@
 layout: default
 title: 59_Настроим_GitLab_Runner
 ---
+<a class="back-link" href="index.html">⬅ Назад к списку</a>
 
 
 ##  Настроим GitLab Runner 

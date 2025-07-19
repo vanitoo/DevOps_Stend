@@ -2,6 +2,7 @@
 layout: default
 title: 22_Настроим CI_CD (GitLab)
 ---
+<a class="back-link" href="index.html">⬅ Назад к списку</a>
 
 
 ##  Настроим CI/CD (GitLab) 

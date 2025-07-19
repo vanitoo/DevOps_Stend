@@ -2,6 +2,7 @@
 layout: default
 title: 58_Настроим_GitLab_Runner_в_Kubernetes
 ---
+<a class="back-link" href="index.html">⬅ Назад к списку</a>
 
 
 ##  Настроим GitLab Runner в Kubernetes 

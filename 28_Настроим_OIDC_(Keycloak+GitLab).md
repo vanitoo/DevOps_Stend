@@ -2,6 +2,7 @@
 layout: default
 title: 28_Настроим OIDC (Keycloak+GitLab)
 ---
+<a class="back-link" href="index.html">⬅ Назад к списку</a>
 
 
 ##  Настроим OIDC (Keycloak+GitLab) 

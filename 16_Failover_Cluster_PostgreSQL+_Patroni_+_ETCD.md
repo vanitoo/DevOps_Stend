@@ -2,6 +2,7 @@
 layout: default
 title: 16_Failover Cluster PostgreSQL+ Patroni + ETCD
 ---
+<a class="back-link" href="index.html">⬅ Назад к списку</a>
 
 
 ##  Failover Cluster PostgreSQL+ Patroni + ETCD 

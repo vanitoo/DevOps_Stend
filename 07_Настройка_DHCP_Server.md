@@ -2,6 +2,7 @@
 layout: default
 title: 07_Настройка DHCP Server
 ---
+<a class="back-link" href="index.html">⬅ Назад к списку</a>
 
 
 ##  Настройка DHCP Server 

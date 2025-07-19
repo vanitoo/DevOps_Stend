@@ -2,6 +2,7 @@
 layout: default
 title: 09_Настройка Harbor (Ubuntu 20.04)
 ---
+<a class="back-link" href="index.html">⬅ Назад к списку</a>
 
 
 ##  Настройка Harbor (Ubuntu 20.04) 

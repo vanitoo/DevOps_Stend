@@ -2,6 +2,7 @@
 layout: default
 title: 29_Настроим OKD Web console (Keycloak+K8S)
 ---
+<a class="back-link" href="index.html">⬅ Назад к списку</a>
 
 
 ##  Настроим OKD Web console (Keycloak+K8S) 

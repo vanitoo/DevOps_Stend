@@ -2,6 +2,7 @@
 layout: default
 title: 21_Собираем свой Docker контейнер Flask Web Server
 ---
+<a class="back-link" href="index.html">⬅ Назад к списку</a>
 
 
 ##  Собираем свой Docker контейнер Flask Web Server 

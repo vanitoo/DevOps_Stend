@@ -2,6 +2,7 @@
 layout: default
 title: 20_Настройка Node Exporter
 ---
+<a class="back-link" href="index.html">⬅ Назад к списку</a>
 
 
 ##  Настройка Node Exporter 

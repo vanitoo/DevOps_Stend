@@ -2,6 +2,7 @@
 layout: default
 title: 04_Настройка OpenVPN Server
 ---
+<a class="back-link" href="index.html">⬅ Назад к списку</a>
 
 
 ##  Настройка OpenVPN Server 

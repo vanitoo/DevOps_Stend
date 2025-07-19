@@ -2,6 +2,7 @@
 layout: default
 title: 26_Настроим LDAP аутентификацию (FreeIPA)
 ---
+<a class="back-link" href="index.html">⬅ Назад к списку</a>
 
 
 ##  Настроим LDAP аутентификацию (FreeIPA) 

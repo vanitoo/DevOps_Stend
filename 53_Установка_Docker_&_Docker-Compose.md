@@ -2,6 +2,7 @@
 layout: default
 title: 53_Установка_Docker_&_Docker-Compose
 ---
+<a class="back-link" href="index.html">⬅ Назад к списку</a>
 
 
 ##  Установка Docker & Docker-Compose 

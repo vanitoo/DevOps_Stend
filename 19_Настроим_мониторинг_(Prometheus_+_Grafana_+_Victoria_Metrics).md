@@ -2,6 +2,7 @@
 layout: default
 title: 19_Настроим мониторинг (Prometheus + Grafana + Victoria Metrics)
 ---
+<a class="back-link" href="index.html">⬅ Назад к списку</a>
 
 
 ##  Настроим мониторинг (Prometheus + Grafana + Victoria Metrics) 

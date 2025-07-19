@@ -2,8 +2,8 @@
 layout: default
 title: 03_Настройка шлюза (Ubuntu 20.04)
 ---
-
 <a class="back-link" href="index.html">⬅ Назад к списку</a>
+
 
 ##  Настройка шлюза (Ubuntu 20.04) 
 

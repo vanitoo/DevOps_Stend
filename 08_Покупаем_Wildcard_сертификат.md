@@ -2,6 +2,7 @@
 layout: default
 title: 08_Покупаем Wildcard сертификат
 ---
+<a class="back-link" href="index.html">⬅ Назад к списку</a>
 
 
 ##  Покупаем Wildcard сертификат 

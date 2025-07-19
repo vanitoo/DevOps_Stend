@@ -2,6 +2,7 @@
 layout: default
 title: 57_Настроим_GitLab_Operator
 ---
+<a class="back-link" href="index.html">⬅ Назад к списку</a>
 
 
 ##  Настроим GitLab Operator 

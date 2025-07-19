@@ -2,6 +2,7 @@
 layout: default
 title: 55_Настроим_CICD_Jenkins
 ---
+<a class="back-link" href="index.html">⬅ Назад к списку</a>
 
 
 ##  Настроим CI/CD Jenkins 

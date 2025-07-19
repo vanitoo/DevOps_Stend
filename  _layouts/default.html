@@ -5,6 +5,7 @@
   <title>{{ page.title }}</title>
   <link rel="stylesheet" href="/assets/css/style.css">
 </head>
+
 <body>
   <header>
     <div class="container">
@@ -16,9 +17,13 @@
     </div>
   </header>
 
-  <main class="container">
-    {{ content }}
-  </main>
+  <div class="page-container">
+    <div class="left"></div>
+    <main class="content">
+      {{ content }}
+    </main>
+    <div class="right"></div>
+  </div>
 
   <footer>
     <div class="container">
@@ -26,4 +31,5 @@
     </div>
   </footer>
 </body>
+
 </html>

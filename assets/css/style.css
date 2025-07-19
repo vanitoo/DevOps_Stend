@@ -100,3 +100,18 @@ header nav a {
 header nav a:hover {
   text-decoration: underline;
 }
+
+.page-container {
+  display: grid;
+  grid-template-columns: 15% 70% 15%;
+  min-height: 80vh; /* чтобы растягивалось */
+}
+
+.content {
+  grid-column: 2;
+  padding: 1rem;
+}
+
+.left, .right {
+  background: transparent; /* можно задать цвет или оставить пустыми */
+}

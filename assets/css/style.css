@@ -115,3 +115,18 @@ header nav a:hover {
 .left, .right {
   background: transparent; /* можно задать цвет или оставить пустыми */
 }
+
+.page-container {
+  display: grid;
+  grid-template-columns: 15% 70% 15%;
+  min-height: 80vh;
+}
+
+.content {
+  grid-column: 2;
+  padding: 1rem;
+}
+
+.left, .right {
+  background: transparent;
+}

@@ -1,9 +1,9 @@
 ---
 layout: default
-title: DevOps Stend
+title: DevOps stand
 ---
 
-# DevOps Stend
+# DevOps stand
 
 <div class="grid">
 

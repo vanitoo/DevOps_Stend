@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 2_установка proxmox
+title: 02_установка proxmox
 ---
 
 

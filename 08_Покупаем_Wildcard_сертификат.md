@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 8_Покупаем Wildcard сертификат
+title: 08_Покупаем Wildcard сертификат
 ---
 
 

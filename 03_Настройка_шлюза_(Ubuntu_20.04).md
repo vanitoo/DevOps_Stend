@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 3_Настройка шлюза (Ubuntu 20.04)
+title: 03_Настройка шлюза (Ubuntu 20.04)
 ---
 
 

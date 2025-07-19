@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 5_Настройка шаблона k8s-UbuntuTemplate
+title: 05_Настройка шаблона k8s-UbuntuTemplate
 ---
 
 

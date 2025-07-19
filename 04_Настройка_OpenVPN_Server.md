@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 4_Настройка OpenVPN Server
+title: 04_Настройка OpenVPN Server
 ---
 
 

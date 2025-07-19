@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 9_Настройка Harbor (Ubuntu 20.04)
+title: 09_Настройка Harbor (Ubuntu 20.04)
 ---
 
 

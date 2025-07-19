@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 6_Настроим свой DNS сервер (Bind)
+title: 06_Настроим свой DNS сервер (Bind)
 ---
 
 

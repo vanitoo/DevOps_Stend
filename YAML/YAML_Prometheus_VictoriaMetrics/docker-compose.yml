@@ -117,8 +117,8 @@ services:
       - --log.level=info
       - --store=bolt
       - --bolt.path=/data/bot.db
-      - --telegram.admin=573454381
-      - --telegram.token=5472129845:AAFTQRdujqIHgWHbbVtfYWQQvzvIN98KBqg
+      - --telegram.admin=123456789
+      - --telegram.token=123456789:123456789123456789
     image: harbor.kubeadm.ru/mirror.docker.hub/metalmatze/alertmanager-bot:latest
     user: root
     depends_on:

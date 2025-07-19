@@ -130,3 +130,47 @@ header nav a:hover {
 .left, .right {
   background: transparent;
 }
+
+
+.page-container {
+  display: grid;
+  grid-template-columns: 15% 70% 15%;
+  min-height: 80vh;
+}
+
+.content {
+  grid-column: 2;
+  padding: 1rem;
+}
+
+.left,
+.right {
+  background: transparent;
+}
+
+/* Примерная стилизация шапки */
+header.site-header {
+  background: #222;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+header.site-header nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 1rem;
+  font-weight: bold;
+}
+
+header.site-header nav a:hover {
+  text-decoration: underline;
+}
+
+/* Футер */
+footer.site-footer {
+  background: #222;
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+  margin-top: 2rem;
+}

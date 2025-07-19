@@ -47,11 +47,11 @@ class VBulletinImageDownloader:
             os.makedirs(folder, exist_ok=True)
 
             parsed = urlparse(img_url)
-            filename = parsed.path.split('/')[-1] or f"image_{hash(img_url)}.jpg"
+            filename = parsed.path.split('/')[-1] or f"image_{hash(img_url)}.png"
 
             if 'filedata/fetch' in img_url:
                 params = dict(p.split('=') for p in parsed.query.split('&'))
-                filename = f"img_{params.get('id', '0')}_{params.get('d', '0')}.jpg"
+                filename = f"img_{params.get('id', '0')}_{params.get('d', '0')}.png"
 
             filepath = os.path.join(folder, filename)
 

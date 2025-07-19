@@ -1,3 +1,8 @@
+---
+layout: default
+title: 10_Настроим зеркало Docker Hub
+---
+
 
 ##  Настроим зеркало Docker Hub 
 

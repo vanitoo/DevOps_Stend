@@ -1,3 +1,8 @@
+---
+layout: default
+title: 28_Настроим OIDC (Keycloak+GitLab)
+---
+
 
 ##  Настроим OIDC (Keycloak+GitLab) 
 

@@ -1,3 +1,8 @@
+---
+layout: default
+title: 30_Настроим логирование Django в Console _ File _ OpenSearch
+---
+
 
 ##  Настроим логирование Django в Console | File | OpenSearch 
 

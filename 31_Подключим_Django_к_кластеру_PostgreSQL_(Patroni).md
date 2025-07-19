@@ -1,3 +1,8 @@
+---
+layout: default
+title: 31_Подключим Django к кластеру PostgreSQL (Patroni)
+---
+
 
 ##  Подключим Django к кластеру PostgreSQL (Patroni) 
 

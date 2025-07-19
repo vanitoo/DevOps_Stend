@@ -1,3 +1,8 @@
+---
+layout: default
+title: 26_Настроим LDAP аутентификацию (FreeIPA)
+---
+
 
 ##  Настроим LDAP аутентификацию (FreeIPA) 
 

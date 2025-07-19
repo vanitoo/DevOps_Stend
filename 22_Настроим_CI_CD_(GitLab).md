@@ -1,3 +1,8 @@
+---
+layout: default
+title: 22_Настроим CI_CD (GitLab)
+---
+
 
 ##  Настроим CI/CD (GitLab) 
 

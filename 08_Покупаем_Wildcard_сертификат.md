@@ -1,3 +1,8 @@
+---
+layout: default
+title: 8_Покупаем Wildcard сертификат
+---
+
 
 ##  Покупаем Wildcard сертификат 
 

@@ -1,3 +1,8 @@
+---
+layout: default
+title: 20_Настройка Node Exporter
+---
+
 
 ##  Настройка Node Exporter 
 

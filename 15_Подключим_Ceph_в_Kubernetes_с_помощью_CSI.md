@@ -1,3 +1,8 @@
+---
+layout: default
+title: 15_Подключим Ceph в Kubernetes с помощью CSI
+---
+
 
 ##  Подключим Ceph в Kubernetes с помощью CSI 
 

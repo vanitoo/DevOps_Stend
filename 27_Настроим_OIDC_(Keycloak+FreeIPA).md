@@ -1,3 +1,8 @@
+---
+layout: default
+title: 27_Настроим OIDC (Keycloak+FreeIPA)
+---
+
 
 ##  Настроим OIDC (Keycloak+FreeIPA) 
 

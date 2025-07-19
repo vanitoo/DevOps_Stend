@@ -1,3 +1,8 @@
+---
+layout: default
+title: 11_Настройка Gitlab (v14.4.0)
+---
+
 
 ##  Настройка Gitlab (v14.4.0) 
 

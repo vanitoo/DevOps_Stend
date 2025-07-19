@@ -1,3 +1,8 @@
+---
+layout: default
+title: 12_Настройка GitLab Runner (v14.4.0)
+---
+
 
 ##  Настройка GitLab Runner (v14.4.0) 
 

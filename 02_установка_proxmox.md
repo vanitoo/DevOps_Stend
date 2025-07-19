@@ -1,3 +1,8 @@
+---
+layout: default
+title: 2_установка proxmox
+---
+
 
 ##  Установка Proxmox 
 

@@ -1,3 +1,8 @@
+---
+layout: default
+title: 29_Настроим OKD Web console (Keycloak+K8S)
+---
+
 
 ##  Настроим OKD Web console (Keycloak+K8S) 
 

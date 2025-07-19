@@ -1,3 +1,8 @@
+---
+layout: default
+title: 13_Настроим K8s (CRI-O, MetalLB, Ingress)
+---
+
 
 ##  Настроим K8s (CRI-O, MetalLB, Ingress) 
 

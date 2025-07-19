@@ -1,3 +1,8 @@
+---
+layout: default
+title: 25_Резервное копирование K8s (Velero)
+---
+
 
 ##  Резервное копирование K8s (Velero) 
 

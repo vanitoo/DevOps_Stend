@@ -1,3 +1,8 @@
+---
+layout: default
+title: 16_Failover Cluster PostgreSQL+ Patroni + ETCD
+---
+
 
 ##  Failover Cluster PostgreSQL+ Patroni + ETCD 
 

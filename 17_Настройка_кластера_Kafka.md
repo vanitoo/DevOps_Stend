@@ -1,3 +1,8 @@
+---
+layout: default
+title: 17_Настройка кластера Kafka
+---
+
 
 ##  Настройка кластера Kafka 
 

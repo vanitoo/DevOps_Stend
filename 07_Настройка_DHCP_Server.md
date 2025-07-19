@@ -1,3 +1,8 @@
+---
+layout: default
+title: 7_Настройка DHCP Server
+---
+
 
 ##  Настройка DHCP Server 
 

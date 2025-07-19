@@ -1,3 +1,8 @@
+---
+layout: default
+title: 23_Развёртывание Django Web Server в Интенет
+---
+
 
 ##  Развёртывание Django Web Server в Интенет 
 

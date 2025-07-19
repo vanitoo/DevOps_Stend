@@ -1,3 +1,8 @@
+---
+layout: default
+title: 14_Настройка S3 API Ceph 15 Octopus (Ubuntu 20.04)
+---
+
 
 ##  Настройка S3 API Ceph 15 Octopus (Ubuntu 20.04) 
 

@@ -1,3 +1,8 @@
+---
+layout: default
+title: 24_Резервное копирование РоstgrеSQL (WalG)
+---
+
 
 ##  Резервное копирование РоstgrеSQL (WalG) 
 

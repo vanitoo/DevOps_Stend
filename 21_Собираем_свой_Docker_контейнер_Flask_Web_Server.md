@@ -1,3 +1,8 @@
+---
+layout: default
+title: 21_Собираем свой Docker контейнер Flask Web Server
+---
+
 
 ##  Собираем свой Docker контейнер Flask Web Server 
 

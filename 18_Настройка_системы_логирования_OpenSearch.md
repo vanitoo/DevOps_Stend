@@ -1,3 +1,8 @@
+---
+layout: default
+title: 18_Настройка системы логирования OpenSearch
+---
+
 
 ##  Настройка системы логирования OpenSearch 
 

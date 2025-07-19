@@ -1,3 +1,8 @@
+---
+layout: default
+title: 19_Настроим мониторинг (Prometheus + Grafana + Victoria Metrics)
+---
+
 
 ##  Настроим мониторинг (Prometheus + Grafana + Victoria Metrics) 
 

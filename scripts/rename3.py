@@ -1,7 +1,7 @@
 import os
 
 # 📂 Укажи папку, где лежат твои .md инструкции
-folder = r"C:\Project\vBulletin_convert_Markdown"  # 👈 замени на свою папку
+folder = r"./"  # 👈 замени на свою папку
 
 # 🔧 Настройки фронт-маттера
 layout = "default"

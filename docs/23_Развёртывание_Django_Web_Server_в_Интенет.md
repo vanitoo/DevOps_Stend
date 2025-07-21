@@ -2,7 +2,7 @@
 layout: default
 title: 23_Развёртывание Django Web Server в Интенет
 ---
-<a class="back-link" href="index.html">⬅ Назад к списку</a>
+<a class="back-link" href="../index.html">⬅ Назад к списку</a>
 
 
 ##  Развёртывание Django Web Server в Интенет 

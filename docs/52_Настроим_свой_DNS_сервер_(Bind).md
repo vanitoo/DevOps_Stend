@@ -2,7 +2,7 @@
 layout: default
 title: 52_Настроим_свой_DNS_сервер_(Bind)
 ---
-<a class="back-link" href="index.html">⬅ Назад к списку</a>
+<a class="back-link" href="../index.html">⬅ Назад к списку</a>
 
 
 ##  Настроим свой DNS сервер (Bind) 

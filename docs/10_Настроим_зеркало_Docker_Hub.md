@@ -2,7 +2,7 @@
 layout: default
 title: 10_Настроим зеркало Docker Hub
 ---
-<a class="back-link" href="index.html">⬅ Назад к списку</a>
+<a class="back-link" href="../index.html">⬅ Назад к списку</a>
 
 
 ##  Настроим зеркало Docker Hub 

@@ -2,7 +2,7 @@
 layout: default
 title: 11_Настройка Gitlab (v14.4.0)
 ---
-<a class="back-link" href="index.html">⬅ Назад к списку</a>
+<a class="back-link" href="../index.html">⬅ Назад к списку</a>
 
 
 ##  Настройка Gitlab (v14.4.0) 

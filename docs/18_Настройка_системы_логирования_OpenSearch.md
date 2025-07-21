@@ -2,7 +2,7 @@
 layout: default
 title: 18_Настройка системы логирования OpenSearch
 ---
-<a class="back-link" href="index.html">⬅ Назад к списку</a>
+<a class="back-link" href="../index.html">⬅ Назад к списку</a>
 
 
 ##  Настройка системы логирования OpenSearch 

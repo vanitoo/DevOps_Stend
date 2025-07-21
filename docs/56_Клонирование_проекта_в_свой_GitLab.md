@@ -2,7 +2,7 @@
 layout: default
 title: 56_Клонирование_проекта_в_свой_GitLab
 ---
-<a class="back-link" href="index.html">⬅ Назад к списку</a>
+<a class="back-link" href="../index.html">⬅ Назад к списку</a>
 
 
 ##  Клонирование проекта в свой GitLab 

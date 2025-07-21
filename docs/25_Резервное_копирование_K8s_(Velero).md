@@ -2,7 +2,7 @@
 layout: default
 title: 25_Резервное копирование K8s (Velero)
 ---
-<a class="back-link" href="index.html">⬅ Назад к списку</a>
+<a class="back-link" href="../index.html">⬅ Назад к списку</a>
 
 
 ##  Резервное копирование K8s (Velero) 

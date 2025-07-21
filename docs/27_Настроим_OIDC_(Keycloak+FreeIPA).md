@@ -2,7 +2,7 @@
 layout: default
 title: 27_Настроим OIDC (Keycloak+FreeIPA)
 ---
-<a class="back-link" href="index.html">⬅ Назад к списку</a>
+<a class="back-link" href="../index.html">⬅ Назад к списку</a>
 
 
 ##  Настроим OIDC (Keycloak+FreeIPA) 

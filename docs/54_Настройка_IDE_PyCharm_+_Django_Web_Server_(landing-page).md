@@ -2,7 +2,7 @@
 layout: default
 title: 54_Настройка_IDE_PyCharm_+_Django_Web_Server_(landing-page)
 ---
-<a class="back-link" href="index.html">⬅ Назад к списку</a>
+<a class="back-link" href="../index.html">⬅ Назад к списку</a>
 
 
 ##  Настройка IDE PyCharm + Django Web Server (landing-page) 

@@ -2,7 +2,7 @@
 layout: default
 title: 13_Настроим K8s (CRI-O, MetalLB, Ingress)
 ---
-<a class="back-link" href="index.html">⬅ Назад к списку</a>
+<a class="back-link" href="../index.html">⬅ Назад к списку</a>
 
 
 ##  Настроим K8s (CRI-O, MetalLB, Ingress) 

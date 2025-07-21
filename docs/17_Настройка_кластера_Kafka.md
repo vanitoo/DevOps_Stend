@@ -2,7 +2,7 @@
 layout: default
 title: 17_Настройка кластера Kafka
 ---
-<a class="back-link" href="index.html">⬅ Назад к списку</a>
+<a class="back-link" href="../index.html">⬅ Назад к списку</a>
 
 
 ##  Настройка кластера Kafka 

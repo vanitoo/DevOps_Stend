@@ -2,7 +2,7 @@
 layout: default
 title: 51_Установка_Ubuntu_20.04_LTS
 ---
-<a class="back-link" href="index.html">⬅ Назад к списку</a>
+<a class="back-link" href="../index.html">⬅ Назад к списку</a>
 
 
 ##  Установка Ubuntu 20.04 LTS 

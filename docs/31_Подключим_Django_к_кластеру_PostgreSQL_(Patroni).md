@@ -2,7 +2,7 @@
 layout: default
 title: 31_Подключим Django к кластеру PostgreSQL (Patroni)
 ---
-<a class="back-link" href="index.html">⬅ Назад к списку</a>
+<a class="back-link" href="../index.html">⬅ Назад к списку</a>
 
 
 ##  Подключим Django к кластеру PostgreSQL (Patroni) 

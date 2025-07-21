@@ -2,7 +2,7 @@
 layout: default
 title: 30_Настроим логирование Django в Console _ File _ OpenSearch
 ---
-<a class="back-link" href="index.html">⬅ Назад к списку</a>
+<a class="back-link" href="../index.html">⬅ Назад к списку</a>
 
 
 ##  Настроим логирование Django в Console | File | OpenSearch 

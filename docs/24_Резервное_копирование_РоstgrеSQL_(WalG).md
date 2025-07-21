@@ -2,7 +2,7 @@
 layout: default
 title: 24_Резервное копирование РоstgrеSQL (WalG)
 ---
-<a class="back-link" href="index.html">⬅ Назад к списку</a>
+<a class="back-link" href="../index.html">⬅ Назад к списку</a>
 
 
 ##  Резервное копирование РоstgrеSQL (WalG) 

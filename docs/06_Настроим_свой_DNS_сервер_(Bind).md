@@ -2,7 +2,7 @@
 layout: default
 title: 06_Настроим свой DNS сервер (Bind)
 ---
-<a class="back-link" href="index.html">⬅ Назад к списку</a>
+<a class="back-link" href="../index.html">⬅ Назад к списку</a>
 
 
 ##  Настроим свой DNS сервер (Bind) 

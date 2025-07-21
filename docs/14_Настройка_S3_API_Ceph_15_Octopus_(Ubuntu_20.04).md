@@ -2,7 +2,7 @@
 layout: default
 title: 14_Настройка S3 API Ceph 15 Octopus (Ubuntu 20.04)
 ---
-<a class="back-link" href="index.html">⬅ Назад к списку</a>
+<a class="back-link" href="../index.html">⬅ Назад к списку</a>
 
 
 ##  Настройка S3 API Ceph 15 Octopus (Ubuntu 20.04) 

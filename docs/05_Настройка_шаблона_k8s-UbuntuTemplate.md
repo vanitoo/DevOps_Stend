@@ -2,7 +2,7 @@
 layout: default
 title: 05_Настройка шаблона k8s-UbuntuTemplate
 ---
-<a class="back-link" href="index.html">⬅ Назад к списку</a>
+<a class="back-link" href="../index.html">⬅ Назад к списку</a>
 
 
 ##  Настройка шаблона k8s-UbuntuTemplate 

@@ -2,7 +2,7 @@
 layout: default
 title: 50_Покупаем_Wildcard_сертификат
 ---
-<a class="back-link" href="index.html">⬅ Назад к списку</a>
+<a class="back-link" href="../index.html">⬅ Назад к списку</a>
 
 
 ##  Покупаем Wildcard сертификат 

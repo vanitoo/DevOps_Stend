@@ -7,7 +7,6 @@ title: 27_Настроим OIDC (Keycloak+FreeIPA)
 
 ##  Настроим OIDC (Keycloak+FreeIPA) 
 
-01-03-2025, 08:26 AM
 
 Источник [тут](https://habr.com/ru/articles/716232/)  
 Источник [тут](https://telegra.ph/Ustanovka-kontejnerizirovannyh-servisov-FreeIPA--KeyCloak-Single-Sign-On-03-10?ysclid=m5leobgf1b769557154)  

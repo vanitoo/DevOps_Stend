@@ -7,8 +7,6 @@ title: 54_Настройка_IDE_PyCharm_+_Django_Web_Server_(landing-page)
 
 ##  Настройка IDE PyCharm + Django Web Server (landing-page) 
 
-06-02-2025, 10:55 PM
-
   
 ![Нажмите на изображение для увеличения.
 

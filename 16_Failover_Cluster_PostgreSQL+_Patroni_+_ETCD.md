@@ -7,7 +7,6 @@ title: 16_Failover Cluster PostgreSQL+ Patroni + ETCD
 
 ##  Failover Cluster PostgreSQL+ Patroni + ETCD 
 
-05-15-2021, 10:08 PM
 
 **1\. Подготовим 3 виртуальных машины**  
   

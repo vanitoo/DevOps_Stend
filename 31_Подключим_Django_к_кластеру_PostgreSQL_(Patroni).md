@@ -7,7 +7,6 @@ title: 31_Подключим Django к кластеру PostgreSQL (Patroni)
 
 ##  Подключим Django к кластеру PostgreSQL (Patroni) 
 
-06-06-2025, 10:40 AM
 
 Источник [тут](https://www.youtube.com/watch?v=tLGDDPrElWU)  
   

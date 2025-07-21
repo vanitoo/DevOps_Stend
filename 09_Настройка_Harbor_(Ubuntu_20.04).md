@@ -7,7 +7,6 @@ title: 09_Настройка Harbor (Ubuntu 20.04)
 
 ##  Настройка Harbor (Ubuntu 20.04) 
 
-03-03-2023, 10:55 AM
 
 Источник [тут](https://goharbor.io/docs/2.5.0/install-config/configure-https/)  
   

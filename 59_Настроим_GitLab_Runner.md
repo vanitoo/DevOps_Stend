@@ -7,7 +7,6 @@ title: 59_Настроим_GitLab_Runner
 
 ##  Настроим GitLab Runner 
 
-04-30-2024, 11:01 AM
 
 Источник [тут](https://gist.github.com/k-srkw/822b4be155cb96f51e49bfae6b8cbba0)  
   

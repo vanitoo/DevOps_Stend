@@ -7,8 +7,6 @@ title: 04_Настройка OpenVPN Server
 
 ##  Настройка OpenVPN Server 
 
-02-06-2023, 10:42 PM
-
   
 **1\. Заходим в SSH консоль шлюза gate**  
   

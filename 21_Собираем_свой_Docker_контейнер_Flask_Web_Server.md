@@ -7,8 +7,6 @@ title: 21_Собираем свой Docker контейнер Flask Web Server
 
 ##  Собираем свой Docker контейнер Flask Web Server 
 
-03-14-2022, 05:02 PM
-
 vCPU = 4  
 vRAM = 4 Gb  
 vHDD1 = 40 Gb  

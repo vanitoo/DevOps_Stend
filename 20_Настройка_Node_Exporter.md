@@ -7,7 +7,6 @@ title: 20_Настройка Node Exporter
 
 ##  Настройка Node Exporter 
 
-04-29-2021, 11:08 PM
 
 Источник: [Node Exporter](https://prometheus.io/docs/guides/node-exporter/)  
   

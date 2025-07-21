@@ -7,7 +7,6 @@ title: 29_Настроим OKD Web console (Keycloak+K8S)
 
 ##  Настроим OKD Web console (Keycloak+K8S) 
 
-02-03-2025, 01:49 PM
 
 Источник [тут](https://habr.com/ru/articles/850864/)  
   

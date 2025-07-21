@@ -7,8 +7,6 @@ title: 53_Установка_Docker_&_Docker-Compose
 
 ##  Установка Docker & Docker-Compose 
 
-01-01-2022, 10:02 PM
-
   
 **1\. Ставим Docker**  
   

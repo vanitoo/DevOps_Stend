@@ -7,7 +7,6 @@ title: 12_Настройка GitLab Runner (v14.4.0)
 
 ##  Настройка GitLab Runner (v14.4.0) 
 
-02-13-2022, 07:33 PM
 
 vCPU = 4  
 vRAM = 4 Gb  

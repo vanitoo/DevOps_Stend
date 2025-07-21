@@ -7,7 +7,6 @@ title: 26_Настроим LDAP аутентификацию (FreeIPA)
 
 ##  Настроим LDAP аутентификацию (FreeIPA) 
 
-01-06-2025, 04:31 PM
 
 Источник [тут](https://computingforgeeks.com/run-freeipa-server-in-docker-podman-containers/)  
 Источник [тут](https://computingforgeeks.com/harbor-registry-ldap-integration/)  

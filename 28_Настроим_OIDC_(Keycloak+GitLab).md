@@ -7,7 +7,6 @@ title: 28_Настроим OIDC (Keycloak+GitLab)
 
 ##  Настроим OIDC (Keycloak+GitLab) 
 
-02-01-2025, 11:27 PM
 
 Источник [тут](https://vk.com/wall-226121191_212?ysclid=m6mn2pgq6t863888093)  
 Источник [тут](https://bytegoblin.io/blog/kubernetes-authentication-with-keycloak-oidc.mdx)  

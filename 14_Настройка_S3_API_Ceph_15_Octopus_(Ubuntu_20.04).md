@@ -7,7 +7,6 @@ title: 14_Настройка S3 API Ceph 15 Octopus (Ubuntu 20.04)
 
 ##  Настройка S3 API Ceph 15 Octopus (Ubuntu 20.04) 
 
-05-26-2021, 06:48 AM
 
   
 **Подготовим 3 виртуальных машин**  

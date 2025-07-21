@@ -7,8 +7,6 @@ title: 58_Настроим_GitLab_Runner_в_Kubernetes
 
 ##  Настроим GitLab Runner в Kubernetes 
 
-07-20-2024, 09:14 AM
-
   
 **1\. Установка Helm на свой ПК**  
   

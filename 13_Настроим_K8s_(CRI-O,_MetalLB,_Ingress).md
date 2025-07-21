@@ -7,7 +7,6 @@ title: 13_Настроим K8s (CRI-O, MetalLB, Ingress)
 
 ##  Настроим K8s (CRI-O, MetalLB, Ingress) 
 
-04-16-2024, 08:41 AM
 
 Источник [тут](https://timeweb.cloud/tutorials/kubernetes/kak-ustanovit-i-nastroit-kubernetes-ubuntu?ysclid=lv10t3tx40397374261)  
   

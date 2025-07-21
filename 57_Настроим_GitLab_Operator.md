@@ -7,7 +7,6 @@ title: 57_Настроим_GitLab_Operator
 
 ##  Настроим GitLab Operator 
 
-04-20-2024, 07:12 PM
 
 Источник [тут](https://docs.gitlab.com/operator/installation.html?tab=Kubernetes)  
   

@@ -7,8 +7,6 @@ title: 05_Настройка шаблона k8s-UbuntuTemplate
 
 ##  Настройка шаблона k8s-UbuntuTemplate 
 
-10-06-2024, 07:54 AM
-
   
 vCPU = 4  
 vRAM = 4 Gb  

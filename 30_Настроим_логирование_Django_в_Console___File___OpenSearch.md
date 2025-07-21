@@ -7,8 +7,6 @@ title: 30_Настроим логирование Django в Console _ File _ Ope
 
 ##  Настроим логирование Django в Console | File | OpenSearch 
 
-06-01-2025, 08:56 AM
-
   
 Источник [тут](https://habr.com/ru/articles/421819/)  
 Источник [тут](https://www.youtube.com/watch?v=nfml4BbBAbE)  

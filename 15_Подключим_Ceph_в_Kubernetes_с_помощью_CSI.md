@@ -7,7 +7,6 @@ title: 15_Подключим Ceph в Kubernetes с помощью CSI
 
 ##  Подключим Ceph в Kubernetes с помощью CSI 
 
-12-01-2024, 09:01 AM
 
   
 Загружаем [**_архив_**](https://galkin-vladimir.ru:5446/d/s/119wnMMuR5g1iCaFKOwg6POL02YUbRgN/WGBp1ka-KI8hcd3rjpupgUfgzFfMEGoY-iL3Ahjia3Qs)  

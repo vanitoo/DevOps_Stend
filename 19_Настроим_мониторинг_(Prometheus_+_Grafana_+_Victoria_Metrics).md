@@ -7,7 +7,6 @@ title: 19_Настроим мониторинг (Prometheus + Grafana + Victoria
 
 ##  Настроим мониторинг (Prometheus + Grafana + Victoria Metrics) 
 
-02-10-2025, 02:27 PM
 
 Источник [тут](http://victoriametrics-an-overview-and-its-use-instead-of-prometheus)  
 Источник [тут](https://www.dmosk.ru/miniinstruktions.php?mini=victoriametrics&ysclid=m6yy0dp8bo581220418)  

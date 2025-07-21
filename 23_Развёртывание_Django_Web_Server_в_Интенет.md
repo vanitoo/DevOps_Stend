@@ -7,8 +7,6 @@ title: 23_Развёртывание Django Web Server в Интенет
 
 ##  Развёртывание Django Web Server в Интенет 
 
-09-07-2023, 05:19 PM
-
 Источник [тут](https://github.com/Williano/Landing-Page/tree/master)  
   
 **1\. Добавляем наш проект в Harbor**  

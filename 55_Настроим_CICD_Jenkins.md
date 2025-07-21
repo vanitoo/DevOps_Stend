@@ -7,7 +7,6 @@ title: 55_Настроим_CICD_Jenkins
 
 ##  Настроим CI/CD Jenkins 
 
-12-22-2024, 08:53 AM
 
 Источник [тут](https://timeweb.cloud/tutorials/ci-cd/avtomatizaciya-nastrojki-jenkins-s-pomoshchyu-docker?ysclid=m4z4ftvq2j495832749)  
 Источник [тут](https://dev.to/andresfmoya/install-jenkins-using-docker-compose-4cab?ysclid=m4z69ezjq7421661973)  
